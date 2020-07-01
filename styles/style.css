@@ -1,0 +1,28 @@
+/*Font for all the site (similar as Arial, used by Google*/
+html {
+    font-style: 'Crimson Text', serif;
+}
+
+/*Hacer que main cubra toda la página - header y footer*/
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(65px, 100%);
+    /*grid-template-areas: "header" "main" "footer";*/
+}
+
+header, footer {
+    min-height: 65px;
+}
+
+header, footer, main {
+    width: 100%;
+    height: 100%;
+}
+
+/*Testers for the display*/
+.test0 {background: black;}
+.test1 {background: lightgrey; /*grid-area: "header";*/}
+.test2 {background: lightgreen; /*grid-area: "main";*/}
+.test3 {background: lightsalmon; /*grid-area: "footer";*/}
