@@ -4,10 +4,12 @@ html {
 }
 
 /*Hacer que main cubra toda la página - header y footer*/
-body {
+.container {
+    height: 1fr;
+    width: 1fr;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
     grid-auto-rows: minmax(65px, 100%);
     /*grid-template-areas: "header" "main" "footer";*/
 }
