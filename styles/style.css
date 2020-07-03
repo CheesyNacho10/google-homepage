@@ -3,28 +3,32 @@ html {
     font-style: 'Crimson Text', serif;
 }
 
-/*Hacer que main cubra toda la página - header y footer*/
 .container {
-    height: 1fr;
-    width: 1fr;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 15%;
-    grid-auto-rows: minmax(65px, 100%);
-    /*grid-template-areas: "header" "main" "footer";*/
-}
-
-header, footer {
-    min-height: 65px;
-}
-
-header, footer, main {
-    width: 100%;
     height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+header {
+    display: flex;
+    min-height: 60px;
+    width: 100%;
+}
+
+main {
+    height: 200px;
+    width: 100%;
+}
+
+footer {
+    min-height: 60px;
+    width: 100%;
 }
 
 /*Testers for the display*/
 .test0 {background: black;}
-.test1 {background: lightgrey; /*grid-area: "header";*/}
-.test2 {background: lightgreen; /*grid-area: "main";*/}
-.test3 {background: lightsalmon; /*grid-area: "footer";*/}
+.test1 {background: lightgrey;}
+.test2 {background: lightgreen;}
+.test3 {background: lightsalmon;}
