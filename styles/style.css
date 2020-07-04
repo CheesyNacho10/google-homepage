@@ -13,18 +13,45 @@ main {
     padding-top: 50px;
 }
 
-.logo {
-    display: block;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 92px 30px 30px;
+    grid-gap: 20px 10px;
+
     position: absolute;
-    top: 30%;
-    left: 42%;
+    top: 40%;
+    left: 35%;
 }
 
+.logo {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+input {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+
+    border-radius: 10%;
+}
+
+.search {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.lucky {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+/*
 form {
     justify-self: center;
     position: relative;
 }
-
+*/
 footer {
     position: fixed;
     left: 0;
