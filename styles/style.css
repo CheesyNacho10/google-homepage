@@ -1,23 +1,24 @@
 /*Font for all the site (similar as Arial, used by Google*/
 html {
-    font-style: Arial, 'Crimson Text', sans-serif;
+    font-family: arial, 'Crimson Text', sans-serif;
 }
 
 header {
     min-height: 60px;
-    width: 97%;
-    margin: 0px 0px 0px 20px;
+    width: 95%;
+    padding: 0px 0px 0px 20px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 a {
     color: black;
     text-decoration: none;
+    opacity: 0.75;
 
     margin: 0px 0px 0px 10px;
 }
@@ -31,22 +32,29 @@ a:hover {
     color: white;
     font-weight: bold;
     font-size: small;
+    margin-left: 10px;
+    padding: 7.5px 12px 7.5px 12px;
+    border-radius: 2px;
 }
 
 .searcher {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 92px 50px 40px;
-    grid-gap: 20px 10px;
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: 92px 40px 35px;
+    grid-gap: 30px 10px;
 
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 23%;
+    left: 30%;
 }
 
 .logo {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+}
+
+.square {
+    padding: 0px;
 }
 
 input {
@@ -66,10 +74,10 @@ input:focus {
 }
 
 button {
-    background-color: lightgray;
-    font-size: 16px;
-    color: darkcyan;
-    border: lightgray;
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    color: #5F6368;
+    border: none;
     border-radius: 5px;
 }
 
@@ -91,13 +99,26 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding: 5px 0px 10px 10px;
-    min-height: 40px;
+    padding: 10px 0px 10px 10px;
+    min-height: 25px;
     width: 100%;
+    background: rgb(242, 242, 242);
+    font-size: 14px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*Testers for the display*/
+.rightLinks {
+    padding-right: 30px;
+}
+
+.footerLinks {
+    margin-left: 30px;
+}
+
+/*Testers for the display
 .test0 {background: black;}
 .test1 {background: lightgrey;}
-.test2 {background: lightgreen;}
-.test3 {background: lightsalmon;}
+.test2 {background: lightgreen;}*/
