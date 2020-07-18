@@ -1,4 +1,4 @@
-/*Font for all the site (similar as Arial, used by Google*/
+/*Font for all the site (similar as Arial, used by Google)*/
 html {
     font-family: arial, 'Crimson Text', sans-serif;
 }
@@ -27,6 +27,16 @@ a:hover {
     text-decoration: underline;
 }
 
+.rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagesLink {
+    margin-right: 10px;
+}
+
 .singIn {
     background: #4285f4;
     color: white;
@@ -45,7 +55,7 @@ a:hover {
 
     position: absolute;
     top: 23%;
-    left: 30%;
+    left: 40%;
 }
 
 .logo {
